@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/abelevtsov/TypedQuery.svg?branch=master)](https://travis-ci.org/abelevtsov/TypedQuery)
+[![Build Status](https://travis-ci.org/OwnSpace/XrmTypedQuery.svg?branch=master)](https://travis-ci.org/OwnSpace/XrmTypedQuery)
 # CRM 365 TypedQuery
 
 This package provides ability to use strongly typed ColumnSet and QueryExpression and so construct them without typo:
