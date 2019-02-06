@@ -6,8 +6,8 @@
     <title>CRM 365 TypedQuery</title>
     <authors>Aleksandr Belevtsov</authors>
     <owners>Aleksandr Belevtsov</owners>
-    <projectUrl>https://github.com/abelevtsov/TypedQuery</projectUrl>
-    <iconUrl>https://github.com/abelevtsov/TypedQuery/xrm.png</iconUrl>
+    <projectUrl>https://github.com/OwnSpace/XrmTypedQuery</projectUrl>
+    <iconUrl>https://github.com/OwnSpace/XrmTypedQuery/xrm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package with typed by proxy classes (Microsoft.Xrm.Sdk.Entity) QueryExpression and ColumnSet</description>
     <copyright></copyright>
