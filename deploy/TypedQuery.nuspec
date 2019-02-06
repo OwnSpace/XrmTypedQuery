@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>XrmTypedQuery</id>
+    <version>1.0.0</version>
+    <title>CRM 365 TypedQuery</title>
+    <authors>Aleksandr Belevtsov</authors>
+    <owners>Aleksandr Belevtsov</owners>
+    <projectUrl>https://github.com/abelevtsov/TypedQuery</projectUrl>
+    <iconUrl>https://github.com/abelevtsov/TypedQuery/xrm.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package with typed by proxy classes (Microsoft.Xrm.Sdk.Entity) QueryExpression and ColumnSet</description>
+    <copyright></copyright>
+    <language>en-US</language>
+    <tags>crm queryexpression columnset 365 xrm</tags>
+    <dependencies>
+      <dependency id="Microsoft.CRM2016.SDK.Plug-inAssemblies" version="1.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Xrm.TypedQuery.dll" target="lib\.net461" />
+    <file src="Xrm.TypedQuery.xml" target="lib\.net461" />
+  </files>
+</package>

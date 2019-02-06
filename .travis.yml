@@ -1,0 +1,13 @@
+language: csharp
+solution: src/Xrm.TypedQuery.sln
+install:
+  - curl -L -o nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  - nuget restore src/Xrm.TypedQuery.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - msbuild /p:Configuration=Release src/Xrm.TypedQuery.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./src/Xrm.TypedQuery.Tests/bin/Release/Xrm.TypedQuery.Tests.dll
+  - mono nuget.exe pack ./src/Xrm.TypedQuery/bin/Release/TypedQuery.nuspec -Verbosity quiet -Version $MAJOR_VERSION_NUMBER.$MINOR_VERSION_NUMBER.$TRAVIS_BUILD_NUMBER
+  - mono nuget.exe setApiKey $NUGET_API_KEY -Source $NUGET_SOURCE -Verbosity quiet
+  - mono nuget.exe push ./XrmTypedQuery.$MAJOR_VERSION_NUMBER.$MINOR_VERSION_NUMBER.$TRAVIS_BUILD_NUMBER.nupkg -Verbosity quiet -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
+
