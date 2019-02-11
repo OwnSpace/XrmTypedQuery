@@ -12,3 +12,6 @@ var query =
 query.AddOrder(a => a.AccountCategoryCode, OrderType.Ascending);
 
 var linkEntity = query.AddLink<Lead>(a => a.AccountId, l => l.LeadId);
+```
+
+### Checkout package on [NuGet](https://www.nuget.org/packages/XrmTypedQuery/)
